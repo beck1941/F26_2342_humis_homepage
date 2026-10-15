@@ -16,6 +16,10 @@ body {
         header {
             display: flex;
             flex-direction: column;
+
+            img {
+                display: block;
+            }
         }
 
         section.middle {
@@ -65,7 +69,9 @@ body {
                     flex-direction: column;
                     padding: 5px 20px;
 
-                    nav {
+
+
+                    nav.secondary {
                         display: flex;
                         justify-content: flex-end;
                         flex-direction: row;
@@ -114,6 +120,8 @@ body {
                     }
                 }
                 main {
+
+                    min-height: 600px;
 
 
                     h1 {
