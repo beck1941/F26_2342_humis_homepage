@@ -1,3 +1,6 @@
+@import "images.css";
+@import "layouts.css";
+@import "typography.css";
 :root {
     --green: #676E3D;
 }
@@ -14,8 +17,6 @@ body {
         min-height: 600px;
 
         header {
-            display: flex;
-            flex-direction: column;
 
             img {
                 display: block;
@@ -51,19 +52,22 @@ body {
                                 background-color: #505A2F;
                                 color: white;
                             }
+
+                            &:active {
+                                font-weight: bold;
+                            }
                         }
                     }
 
                     .links {
                         display: flex;
                         flex-direction: column;
-                        margin-bottom: 25px;
+                        margin-bottom: 2rem;
                     }
                 }
 
                 &.right-side {
                     width: 70%;
-                    min-height: 600px;
                     display: flex;
                     justify-content: space-between;
                     flex-direction: column;
@@ -74,19 +78,12 @@ body {
                     nav.secondary {
                         display: flex;
                         justify-content: flex-end;
-                        flex-direction: row;
-                        align-items: center;
                         font-size: 10px;
-                        gap: 3px;
+                        gap: 5px;
 
                         a {
                             color: black;
                             text-decoration: none;
-                            border-right: 1px solid black;
-                            padding-right: 5px;
-                            margin-left: 3px;
-
-
 
                             &:hover {
                                 text-decoration: underline;
@@ -102,13 +99,11 @@ body {
 
                             nav.bottom-nav {
                                 text-transform: lowercase;
+                                font-size: 9px;
                             }
 
                         }
 
-                        img {
-                            vertical-align: middle;
-                        }
 
                         &.top-nav{
                             text-transform: uppercase;
@@ -123,27 +118,6 @@ body {
 
                     min-height: 600px;
 
-
-                    h1 {
-                        text-transform: uppercase;
-                        color: red;
-                        font-size: 22px;
-
-                    }
-
-                    p {
-                        text-align: justify;
-                        text-justify: distribute;
-                        font-size: 13px;
-
-                    }
-
-                    img {
-                        width:40%;
-                        float: right;
-                        margin: 0 0 5px 20px;
-
-                    }
                 }
             }
         }
